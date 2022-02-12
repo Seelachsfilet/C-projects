@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Notepad.lachs.exe" version="1.1.0.9" publicKeyToken="3981ee66cf70bcba" language="de" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Notepad.lachs" version="1.1.0.0" publicKeyToken="06DDE2282E1D9C21" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Notepad.lachs.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC-Manifestoptionen
+             Wenn Sie die Ebene der Benutzerkontensteuerung für Windows ändern möchten, ersetzen Sie den 
+             Knoten "requestedExecutionLevel" wie folgt.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Durch Angabe des Elements "requestedExecutionLevel" wird die Datei- und Registrierungsvirtualisierung deaktiviert. 
+            Entfernen Sie dieses Element, wenn diese Virtualisierung aus Gründen der Abwärtskompatibilität
+            für die Anwendung erforderlich ist.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Notepad.lachs.exe" size="15808">
+      <assemblyIdentity name="Notepad.lachs" version="1.1.0.0" publicKeyToken="06DDE2282E1D9C21" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>fQGMxhOpKMMC4Ngr3gsZyPV9RvXWsecFK5kPIu1h1ek=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="changes.txt" size="253">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>eWHUQlok8E7cbmx968ROyIpgv/8jQ2l/cYKWpl2M4mk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Notepad.lachs.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- Eine Liste der Windows-Versionen, unter denen diese Anwendung getestet
+           und für die sie entwickelt wurde. Wenn Sie die Auskommentierung der entsprechenden Elemente aufheben,
+           wird von Windows automatisch die kompatibelste Umgebung ausgewählt. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=User-PC\Jessica" issuerKeyHash="d28ccc43c9566bc6cc969e3e3de7fa5a8ec572e3" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>DOArWEeObqOEPFeHf0Exrf5c8tIT7uzVGkuVgnZ8zew=</DigestValue></Reference></SignedInfo><SignatureValue>gHActIzfTwAou4Uu342GzSQrR1Z7rwwQ3ElgxSu9zAbjeIJu1mmfTkUqNo0jYcobkfLn+/Jxr7wo8uLGX/D24g2dGKgspZQU+iXg+wOGnuMjGfRQCYJSyv/kDjUki03JraKozE3PYargfyIwZAqqgEn2YEb7Ar6IhaemSgtm7As=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>qqM6SoLEVyEVbs8FxLb2yAgRfFzkvkxGGS0p9pGCtSgWZZQw+QKk0Quvi419JPj+vm37mBqcGKIXlMrpQmhHbjTiHUE4r7BxNS7DFMD3BSnrPqX686pAHwLuhbPaoSJSXN/2G1unrdXknykFEVbiQL/naoLmZN1uX/bmnnA9EhU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="eccd7c7682954b1ad5ecee13d2f25cfead31417f87573c84a36e8e47582be00c" Description="" Url=""><as:assemblyIdentity name="Notepad.lachs.exe" version="1.1.0.9" publicKeyToken="3981ee66cf70bcba" language="de" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=User-PC\Jessica</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>BSaYRy7EwqCSdIuq+wZyRTw9XMN1FbC2K6flVM/hRJM=</DigestValue></Reference></SignedInfo><SignatureValue>QMGylAgQ1SAnx30gGO62RiKfy95C8k0pls37duyvKPoy0zLAR4R+BkKkktzPKYU03njvzI2ptXQhY+3L2isfwgUNHBhqGU5w4p1mW3FAXgfFJKcxDpf+5ijJRgzgQzwELI+o5Lgq7Z7njepUo53Qib8mcoC1oocoQqrKqqwtBj4=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>qqM6SoLEVyEVbs8FxLb2yAgRfFzkvkxGGS0p9pGCtSgWZZQw+QKk0Quvi419JPj+vm37mBqcGKIXlMrpQmhHbjTiHUE4r7BxNS7DFMD3BSnrPqX686pAHwLuhbPaoSJSXN/2G1unrdXknykFEVbiQL/naoLmZN1uX/bmnnA9EhU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB1TCCAT6gAwIBAgIQTmiZlrukZ6FA3S8B6U/tPDANBgkqhkiG9w0BAQsFADApMScwJQYDVQQDHh4AVQBzAGUAcgAtAFAAQwBcAEoAZQBzAHMAaQBjAGEwHhcNMjIwMjA3MTgzODM4WhcNMjMwMjA4MDAzODM4WjApMScwJQYDVQQDHh4AVQBzAGUAcgAtAFAAQwBcAEoAZQBzAHMAaQBjAGEwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKqjOkqCxFchFW7PBcS29sgIEXxc5L5MRhktKfaRgrUoFmWUMPkCpNELr4uNfST4/r5t+5ganBiiF5TK6UJoR2404h1BOK+wcTUuwxTA9wUp6z6l+vOqQB8C7oWz2qEiUlzf9htbp63V5J8pBRFW4kC/52qC5mTdbl/25p5wPRIVAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAERKkye+VBXd+TxhRJsVfTxAe0lMdQn4hhkYH1KCx2uUlbcd2axjZMvI2Gn9UoKfPcu6TbynmuctXIINTPBzadJaslRbgw2nZ8+xsdeFWsDGWs6asCtyJHHHh77uqSCCcum7K0z8VFwQRJxa1Ey2uNnsv3i2YnfXkDbR3TevCO4U=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
